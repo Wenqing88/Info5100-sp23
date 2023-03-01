@@ -89,7 +89,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+   
+    
+    
     private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {
         createPanel formPanel = new createPanel(bottonPanel,users);
         bottonPanel.add("CreateScreen", formPanel);
