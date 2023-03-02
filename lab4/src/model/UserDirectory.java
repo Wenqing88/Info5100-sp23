@@ -32,6 +32,10 @@ public class UserDirectory {
     public void removeUser(User user) {
         allUsers.remove(user);
     }
+    
+    public int getSize() {
+        return allUsers.size();
+    }
 }
 
     

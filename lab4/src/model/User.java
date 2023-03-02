@@ -32,8 +32,8 @@ public class User {
         return employeeID;
     }
 
-    public void setEmployeeID(String employeeID) {
-        this.employeeID = employeeID;
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = String.format("%06d", employeeID);
     }
 
     public int getAge() {
@@ -76,9 +76,9 @@ public class User {
         this.level = level;
     }
 
-    public long getTelephoneNumber() {
-        return telephoneNumber;
-    }
+//    public long getTelephoneNumber() {
+//        return telephoneNumber;
+//    }
 
     public void setTelephoneNumber(long telephoneNumber) {
         this.telephoneNumber = telephoneNumber;
@@ -105,13 +105,16 @@ public class User {
     public String toString() {
         return name;
     }
-
-    public Object getNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+   
+    public long  getNumber() {
+        return this.telephoneNumber;
+//        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public String getDate() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.startDate.toString();
+//        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     
